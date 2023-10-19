@@ -1,311 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portefolio | Fred Kesse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khitan+Small+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portefolio | Fred Kesse</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khitan+Small+Script&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <nav id="desktop-nav">
-    <div class="logo" style="font-family: 'Noto Serif Khitan Small Script', serif; color: #F99417;">물</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#experience">Expérience</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo" style="font-family: 'Noto Serif Khitan Small Script', serif; color: #F99417;">물</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+  <body>
+    <nav class="nav" id="desktop-nav">
+      <div
+        class="logo"
+        style="
+          font-family: 'Noto Serif Khitan Small Script', serif;
+          color: #f99417;
+        "
+      >
+        물
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profil-pic.jpeg" style="clip-path: circle();" alt="John Doe profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Bonjour, je suis</p>
-      <h1 class="title">Fred Kesse</h1>
-      <p class="section__text__p2">Developeur web Python </p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-          Télécharger mon CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://linkedin.com/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/'" />
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">En savoir plus</p>
-    <h1 class="title">À propos de Moi</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Expérience</h3>
-            <p>1+ ans<br />Développement Frontend et Backend(Python)</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Diplômes</h3>
-            <p>Licence en 3EA -> Electronique, Energie Electrique et Automatique<br />Université Polytechnique de
-              Bingerville</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Certifications</h3>
-            <p>Développement web Python<br />NaN Digital Academy</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            Cette section présente mon parcours académique et professionnel. J'ai plus d'un an d'expérience dans le
-            développement Frontend et Backend en utilisant Python. J'ai également obtenu un diplôme en 3EA
-            (Électronique, Énergie Électrique et Automatique) de l'Université Polytechnique de Bingerville. En outre,
-            j'ai suivi des formations et obtenu des certifications en développement web Python grâce à NaN Digital
-            Academy. Mon parcours reflète mon engagement envers l'apprentissage continu et le développement de
-            compétences dans le domaine du développement web.
-          </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explorer mon</p>
-    <h1 class="title">Expérience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Développement Frontend</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Expérimenté</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Expérimenté</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SASS</h3>
-                <p>Débutant</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Expérience de base</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Figma</h3>
-                <p>Expérimenté</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Développement Backend</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Expérience de base</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Sqlite</h3>
-                <p>Intermédiaire</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Flask / API</h3>
-                <p>Intermédiaire</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Intermédiaire</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Django / REST</h3>
-                <p>Intermédiaire</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Parcourir mes récents</p>
-    <h1 class="title">Projets</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Premier projet</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Voir le projet
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Deuxième projet</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Voir le projet
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Troisième projet</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Voir le projet
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Troisième projet</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Voir le projet
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Prendre contact</p>
-    <h1 class="title">Avec Moi</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:xilhelm720@gmail.com">xilhelm720@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a target="_blank" href="https://linkedin.com/in/fred-kesse-3552381a4
-          ">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
+      <div>
         <ul class="nav-links">
-          <li><a  href="#about">À propos</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <p>Travaux en cours - Fred Kesse - Abidjan | © 2023 Tous droits réservés</p>
-  </footer>
-  <script>
-    var nav = document.getElementById('desktop-nav');
-
-    window.onscroll = function() {
-        if (window.pageYOffset > 0) {
-            nav.style.position = 'fixed';
-            nav.style.top = '0';
-            nav.style.backgroundColor = '#112B3C';
-        } else {
-            nav.style.position = 'relative';
-            nav.style.backgroundColor = '#000000';
-        }
-    };
-</script>
-  <script src="script.js"></script>
-</body>
-
+    <nav id="hamburger-nav">
+      <div
+        class="logo"
+        style="
+          font-family: 'Noto Serif Khitan Small Script', serif;
+          color: #f99417;
+        "
+      >
+        물
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Fred Kesse</h1>
+        <p class="section__text__p2">Dévelopeur web Python</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Télécharger mon CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">En savoir plus</p>
+      <h1 class="title">À propos de Moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Expérience et Certifications</h3>
+              <p>1+ ans<br />Développement Frontend et Backend(Python)</p>
+              <p>Développement web Python<br />NaN Digital Academy</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Diplômes</h3>
+              <p>
+                Licence en 3EA -> Electronique, Energie Electrique et
+                Automatique<br />Université Polytechnique de Bingerville
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Cette section présente mon parcours académique et professionnel. J'ai plus d'un an d'expérience dans le
+                développement Frontend et Backend en utilisant Python. J'ai également obtenu un diplôme en 3EA
+                (Électronique, Énergie Électrique et Automatique) de l'Université Polytechnique de Bingerville. En outre,
+                j'ai suivi des formations et obtenu des certifications en développement web Python grâce à NaN Digital
+                Academy. Mon parcours reflète mon engagement envers l'apprentissage continu et le développement de
+                compétences dans le domaine du développement web.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorer mon</p>
+      <h1 class="title">Expérience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Développement Frontend</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Expérimenté</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Expérimenté</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>SASS</h3>
+                    <p>Débutant</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Expérience de base</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Figma</h3>
+                    <p>Expérimenté</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Développement Backend</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>MongoDB</h3>
+                    <p>Expérience de base</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Sqlite</h3>
+                    <p>Intermédiaire</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Flask / API</h3>
+                    <p>Intermédiaire</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermédiaire</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Django / REST</h3>
+                    <p>Intermédiaire</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Parcourir mes récents</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Premier projet</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Voir le projet
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Deuxième projet</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Voir le projet
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Troisième projet</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Voir le projet
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Prendre contact</p>
+      <h1 class="title">Avec Moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:xilhelm720@gmail.com">xilhelm720@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a target="_blank" href="https://linkedin.com/in/fred-kesse-3552381a4
+            ">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a  href="#about">À propos</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      </nav>
+      <p>Travaux en cours - Fred Kesse - Abidjan | © 2023 Tous droits réservés</p>
+    </footer>
+    <script>
+        var nav = document.getElementById('desktop-nav');
+    
+        window.onscroll = function() {
+            if (window.pageYOffset > 0) {
+                nav.style.position = 'fixed';
+                nav.style.top = '0';
+                nav.style.backgroundColor = '#112B3C';
+            } else {
+                nav.style.position = 'relative';
+                nav.style.backgroundColor = '#000000';
+            }
+        };
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>

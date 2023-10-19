@@ -79,7 +79,7 @@ a:hover {
   color: #4ad295;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: #4ad295;
 }
 
 .logo {

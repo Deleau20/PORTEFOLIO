@@ -19,6 +19,7 @@ p {
   color: rgb(85, 85, 85);
 }
 
+
 /* TRANSITION */
 
 a,
@@ -27,6 +28,12 @@ a,
 }
 
 /* DESKTOP NAV */
+.active{
+  color: #e4ddbe;
+  background-color: #001233;
+  position: fixed;
+  top: 0;
+}
 
 nav,
 .nav-links {
@@ -40,6 +47,17 @@ nav {
   align-items: center;
   height: 7vh;
   z-index: 1;
+  color: white;
+  background-color: #e4ddbe;
+}
+
+nav div ul li a {
+  color: #001233;
+  font-size: 15px;
+}
+
+nav.active div ul li a{
+  color:  #e4ddbe;
 }
 
 .nav-links {
@@ -200,6 +218,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #FF595A;
 }
 
 #socials-container {
@@ -244,12 +263,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background-color: #FF595A;
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #FF595A;
 }
 
 .btn-color-2 {
